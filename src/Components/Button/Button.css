@@ -1,6 +1,7 @@
 .btn41-43 {
-  padding: 15px 30px;
+  padding: 10px 25px;
   font-family: "Poppins", sans-serif;
+  font-size: 18px;
   background: transparent;
   outline: none !important;
   cursor: pointer;
@@ -30,6 +31,7 @@
 
 .btn-41:hover {
   color: #121212;
+  border: 2px solid #f1f1f1;
 }
 
 .btn-41:hover:after {

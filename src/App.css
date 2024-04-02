@@ -1,7 +1,29 @@
+/* background */
 
+#inicio {
+    background-image: radial-gradient(ellipse 60% 80% at bottom, #1C3B56 0%, #121212 72%);
+}
+
+#skills {
+    background-image: radial-gradient(ellipse 60% 80% at top, #1C3B56 0%, #121212 72%);
+}
+
+#contato {
+    background-image: radial-gradient(ellipse 60% 80% at bottom, #1C3B56 0%, #121212 72%);
+}
+
+#footer {
+    background-image: radial-gradient(ellipse 60% 80% at top, #1C3B56 0%, #121212 72%);
+}
 
 .imagem-projetos {
     box-shadow: 15px 15px #0075E0;
+    transition: 0.2s ease;
+}
+
+.imagem-projetos:hover {
+    box-shadow: 15px 15px #0063BE;
+    transition: 0.2s ease-in-out;
 }
 
 /* REDES SOCIAIS */
@@ -47,4 +69,37 @@
 
 .social-icon a:hover img {
     filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+}
+
+/* ANIMACAO MOVEUP FOGUETE */
+
+.container {
+    width: 50px;
+    height: 200px;
+    position: relative;
+}
+
+.animated-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    animation: moveUpDown 3s infinite alternate;
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+        /* início da animação */
+    }
+
+    100% {
+        transform: translateY(100px);
+        /* fim da animação */
+    }
+}
+
+/* links */
+
+.links:hover {
+    fill: #1C3B56;
 }
