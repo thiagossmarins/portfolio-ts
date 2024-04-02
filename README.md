@@ -2,7 +2,7 @@
 
 Este é o meu primeiro projeto em TypeScript, criado com o objetivo principal de aprimorar minhas habilidades nesta linguagem e explorar o uso do Tailwind CSS.
 
-Stacks: React jS, TypeScript e Tailwind CSS
+<h2>Stacks</h2><p>React jS, TypeScript e Tailwind CSS</p> 
 
 
 
