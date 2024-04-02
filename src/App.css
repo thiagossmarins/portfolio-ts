@@ -98,8 +98,13 @@
     }
 }
 
-/* links */
+/* LINKS */
 
-.links:hover {
-    fill: #1C3B56;
+.icone-svg path{
+    fill: #f1f1f1;
+    transition: fill 0.3s;
+}
+
+.icone-svg:hover path {
+    fill: #BFBFBF;
 }

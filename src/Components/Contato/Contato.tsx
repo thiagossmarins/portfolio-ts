@@ -4,7 +4,7 @@ import ButtonForm from '../Button/ButtonForm'
 const Contato = () => {
   return (
     <section id="contato">
-      <div className='w-full max-w-tela-desk h-700 flex items-center justify-between m-auto flex-row-reverse'>
+      <div className='w-full max-w-tela-desk h-600 flex items-center justify-between m-auto flex-row-reverse'>
         <div className='flex flex-col'>
           <h2 className="text-transparent bg-clip-text bg-gradient-to-r from-e4 to-e2 text-42 uppercase font-semibold font-titulo mr-auto mt-20 mb-32">Contato</h2>
           <form className="mx-auto my-0 gap-4 grid grid-cols-2">
@@ -17,8 +17,8 @@ const Contato = () => {
           <ButtonForm />
         </div>
 
-        <div className='flex items-center justify-center'>
-          <img className='w-450' src={ilustacao} alt="ilustracao" />
+        <div>
+          <img src={ilustacao} alt="ilustracao" />
         </div>
       </div>
 
