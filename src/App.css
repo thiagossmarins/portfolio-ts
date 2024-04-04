@@ -16,15 +16,7 @@
     background-image: radial-gradient(ellipse 60% 80% at top, #1C3B56 0%, #121212 72%);
 }
 
-.imagem-projetos {
-    box-shadow: 15px 15px #0075E0;
-    transition: 0.2s ease;
-}
-
-.imagem-projetos:hover {
-    box-shadow: 15px 15px #0063BE;
-    transition: 0.2s ease-in-out;
-}
+/* INICIO */
 
 /* REDES SOCIAIS */
 
@@ -89,22 +81,70 @@
 @keyframes moveUpDown {
     0% {
         transform: translateY(0);
-        /* início da animação */
     }
 
     100% {
-        transform: translateY(100px);
-        /* fim da animação */
+        transform: translateY(80px);
+    }
+}
+
+/* PROJETOS */
+
+.imagem-projetos {
+    box-shadow: 15px 15px #0075E0;
+    transition: 0.2s ease;
+}
+
+.imagem-projetos:hover {
+    box-shadow: 15px 15px #0063BE;
+    transition: 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 900px) {
+    .imagem-projetos {
+        box-shadow: 12px 12px #0075E0;
+        transition: 0.2s ease;
+    }
+
+    .imagem-projetos:hover {
+        box-shadow: 12px 12px #0063BE;
+        transition: 0.2s ease-in-out;
     }
 }
 
 /* LINKS */
 
-.icone-svg path{
+.icone-svg path {
     fill: #f1f1f1;
     transition: fill 0.3s;
 }
 
 .icone-svg:hover path {
     fill: #BFBFBF;
+}
+
+/* FORMULARIO */
+
+form input,
+form textarea {
+    transition: .3s ease-in-out;
+}
+
+/* ANIMACAO SCROLL */
+
+.js-scroll {
+    opacity: 0;
+    transform: translate3d(-80px, 0, 0);
+    transition: .3s;
+}
+
+.js-scroll.ativo {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+@media screen and (max-width: 900px) {
+    #ilustracao {
+        display: none;
+    }
 }

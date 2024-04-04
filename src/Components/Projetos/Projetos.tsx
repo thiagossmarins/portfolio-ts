@@ -1,21 +1,46 @@
+import { useEffect } from 'react';
 import dogs from '../../assets/project-images/dogs/dogs.webp';
 import carrinho from '../../assets/project-images/carrinho-de-compras/carrinho-de-compras.webp';
 import rickandmorty from '../../assets/project-images/rick-and-morty/rick-and-morty.webp';
 
 const Projetos = () => {
+    useEffect(() => {
+        const handleScroll = () => {
+            const sections = document.querySelectorAll('.js-scroll');
+            const windowMetade = window.innerHeight * 0.6;
+
+            sections.forEach((section) => {
+                const sectionTop = section.getBoundingClientRect().top;
+                const isSectionVisible = sectionTop - windowMetade < 0;
+
+                if (isSectionVisible) {
+                    section.classList.add('ativo');
+                }
+            });
+        };
+
+        handleScroll();
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
-        <section id="projetos" className="bg-c4 pt-11 h-675">
+        <section id="projetos" className="bg-c4 pt-11 max-h-675">
             <div className='w-full items-center justify-between m-auto'>
-                <h2 className="text-transparent bg-clip-text bg-gradient-to-r from-e4 via-e2 to-e1 text-38 text-center uppercase font-semibold font-titulo mt-12">Projetos</h2>
+                <h2 className="text-transparent bg-clip-text bg-gradient-to-r from-e4 via-e2 to-e1 text-38 text-center font-semibold font-titulo mt-12">Projetos</h2>
                 <p className="text-center text-18 font-texto text-c1">Meus principais projetos</p>
-                <div className='container-img flex gap-32 mt-20 flex-wrap m-auto items-center justify-center pb-32'>
+                <div className='container-img flex gap-20 mt-20 flex-wrap mx-auto items-center justify-center pb-32 js-scroll'>
 
                     <div>
                         <a href="https://react-dogs-rede-social.vercel.app/" target="_blank">
-                            <img className='imagem-projetos rounded-2xl cursor-pointer w-400 h-200'
+                            <img className='imagem-projetos rounded-2xl cursor-pointer w-330 h-185'
                                 src={dogs} alt="projeto-dogs"
-                                onMouseOver={(e) => { e.currentTarget.style.width = "420px"; e.currentTarget.style.height = "220px"; }}
-                                onMouseOut={(e) => { e.currentTarget.style.width = "400px"; e.currentTarget.style.height = "200px"; }}
+                                onMouseOver={(e) => { e.currentTarget.style.width = "350px"; e.currentTarget.style.height = "205px"; }}
+                                onMouseOut={(e) => { e.currentTarget.style.width = "325px"; e.currentTarget.style.height = "185px"; }}
                             />
                         </a>
                         <div className='mt-8'>
@@ -40,10 +65,10 @@ const Projetos = () => {
 
                     <div>
                         <a href="https://react-app-carrinho-de-compras.vercel.app/" target="_blank">
-                            <img className='imagem-projetos rounded-2xl cursor-pointer w-400 h-200'
-                                src={carrinho} alt="projeto-carrinho-de-compras"
-                                onMouseOver={(e) => { e.currentTarget.style.width = "420px"; e.currentTarget.style.height = "220px"; }}
-                                onMouseOut={(e) => { e.currentTarget.style.width = "400px"; e.currentTarget.style.height = "200px"; }}
+                            <img className='imagem-projetos rounded-2xl cursor-pointer w-330 h-185'
+                                src={carrinho} alt="projeto-dogs"
+                                onMouseOver={(e) => { e.currentTarget.style.width = "350px"; e.currentTarget.style.height = "205px"; }}
+                                onMouseOut={(e) => { e.currentTarget.style.width = "325px"; e.currentTarget.style.height = "185px"; }}
                             />
                         </a>
                         <div className='mt-8'>
@@ -68,10 +93,10 @@ const Projetos = () => {
 
                     <div>
                         <a href="https://react-app-rick-and-morty-wiki.vercel.app/" target="_blank">
-                            <img className='imagem-projetos rounded-2xl cursor-pointer w-400 h-200'
-                                src={rickandmorty} alt="projeto-carrinho-de-compras"
-                                onMouseOver={(e) => { e.currentTarget.style.width = "420px"; e.currentTarget.style.height = "220px"; }}
-                                onMouseOut={(e) => { e.currentTarget.style.width = "400px"; e.currentTarget.style.height = "200px"; }}
+                            <img className='imagem-projetos rounded-2xl cursor-pointer w-330 h-185'
+                                src={rickandmorty} alt="projeto-dogs"
+                                onMouseOver={(e) => { e.currentTarget.style.width = "350px"; e.currentTarget.style.height = "205px"; }}
+                                onMouseOut={(e) => { e.currentTarget.style.width = "325px"; e.currentTarget.style.height = "185px"; }}
                             />
                         </a>
                         <div className='mt-8'>

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import Button from '../Button/Button';
 import Logo from '../Logo/Logo';
+import './Header.css'
 
 const Header = () => {
     const [isActive, setIsActive] = useState<boolean>(false);
@@ -36,13 +37,13 @@ const Header = () => {
 
     return (
         <header className='bg-c5'>
-            <nav className='max-w-tela-desk flex justify-between items-center h-100 mx-auto'>
+            <nav className={`nav ${isActive ? 'active' : ''} max-w-tela-desk flex justify-between items-center h-100 mx-auto`}>
                 <Logo />
                 <button className="hamburger" onClick={handleHamburgerClick}></button>
-                <ul className='flex gap-16 items-center text-lg'>
-                    <li><a className='text-c0 text-18 font-titulo' href="#inicio">Inicio</a></li>
-                    <li><a className='text-c0 text-18 font-titulo' href="#skills">Skills</a></li>
-                    <li><a className='text-c0 text-18 font-titulo' href="#projetos">Projetos</a></li>
+                <ul className='flex gap-16 items-center text-lg nav-list'>
+                    <li><a className='text-c0 hover:text-c2 duration-300 text-18 font-titulo' href="#inicio">Inicio</a></li>
+                    <li><a className='text-c0 hover:text-c2 duration-300 text-18 font-titulo' href="#skills">Skills</a></li>
+                    <li><a className='text-c0 hover:text-c2 duration-300 text-18 font-titulo' href="#projetos">Projetos</a></li>
                     <Button />
                 </ul>
             </nav>

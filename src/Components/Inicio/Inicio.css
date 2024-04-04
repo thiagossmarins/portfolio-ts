@@ -1,0 +1,19 @@
+@media screen and (max-width: 900px) {
+    #inicio {
+        padding-left: 40px;
+    }
+
+    #ilustracao-foguete {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #titulo {
+        max-width: 800px;
+    }
+
+    #ilustracao-foguete {
+        display: none;
+    }
+}

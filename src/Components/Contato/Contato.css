@@ -1,0 +1,10 @@
+@media screen and (max-width: 450px) {
+    #titulo-contato {
+        margin-left: auto;
+    }
+
+    #container {
+        margin-top: 40px;
+        justify-content: center;
+    }
+}

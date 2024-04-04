@@ -11,13 +11,18 @@ export default {
     },
     extend: {
       maxWidth: {
-        'tela-desk': '1280px',
+        'tela-desk': '1180px',
         'container': '1200px',
         'texto-inicio': '590px',
         'texto-skill': '250px'
       },
+      maxHeight: {
+        'skills': '500px',
+      },
       width: {
         '250': '250px',
+        '330': '330px',
+        '350': '350px',
         '400': '400px',
         '450': '450px',
         '524': '524px',
@@ -27,6 +32,8 @@ export default {
         '55': '55px',
         '65': '65px',
         '100': '100px',
+        '180': '180px',
+        '185': '185px',
         '200': '200px',
         '350': '350px',
         '400': '400px',

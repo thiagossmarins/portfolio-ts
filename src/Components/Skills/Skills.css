@@ -1,0 +1,13 @@
+@media screen and (max-width: 900px) {
+    #habilidades {
+        height: 50px;
+        gap: 18px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #habilidades {
+        height: 35px;
+        gap: 12px;
+    }
+}
