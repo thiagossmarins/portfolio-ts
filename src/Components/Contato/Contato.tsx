@@ -22,7 +22,7 @@ const Contato = () => {
       message: mensagem,
     }
 
-    emailjs.send("service_1xgzkxx", "template_b3im99f", templateParams, "wTxDpwcQtCQ9STIMj")
+    emailjs.send("service_4qty6og", "template_b3im99f", templateParams, "wTxDpwcQtCQ9STIMj")
     .then((response) =>  {
       console.log("Email Enviado", response.status, response.text)
       setName('')
