@@ -4,7 +4,6 @@ import html from '../../assets/skills/html5-original.svg'
 import css from '../../assets/skills/css3-original.svg'
 import git from '../../assets/skills/git-original.svg'
 import tailwind from '../../assets/skills/tailwindcss-original.svg'
-import jquery from '../../assets/skills/jquery-plain-wordmark.svg'
 import php from '../../assets/skills/php-original.svg'
 import mysql from '../../assets/skills/mysql-original-wordmark.svg'
 import './Skills.css'
@@ -23,7 +22,6 @@ const Skills = () => {
                         <img src={css} alt="" />
                         <img src={js} alt="" />
                         <img src={react} alt="" />
-                        <img src={jquery} alt="" />
                         <img src={tailwind} alt="" />
                         <img src={git} alt="" />
                         <img src={php} alt="" />
